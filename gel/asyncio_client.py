@@ -407,7 +407,7 @@ class AsyncIOClient(base_client.BaseClient, abstract.AsyncIOExecutor):
 
 
 def create_async_client(
-    dsn=None,
+    dsn: str = None,
     *,
     max_concurrency: int = None,
     host: str = None,
